@@ -17,8 +17,8 @@ We introduce an additional model branch integrated into the original CycleGAN pi
 - Clone this repo:
 
 ```bash
-git clone https:xxx
-cd xxx
+git clone https: https://github.com/PuppetDiary/CycleGAN-US_enhance.git
+cd CycleGAN-US_enhance
 ```
 
 ### Dataset
@@ -39,7 +39,7 @@ python train.py --dataroot ./datasets/train_datasets/breast --name breast_cycleg
 python train.py --dataroot ./datasets/train_datasets/breast --name breast_cyclegan_resnet18 --model cycle_gan --netG_branch vit_base_branch --pretrained_dir ./weights/Resnet18.ckpt --pretrained_OwnResnet18
 ```
 
-- Check options file for more supported options.
+- Check [options](https://ultrasoundenhance2023.grand-challenge.org/datasets/) file for more supported options.
 
 ### Test
 

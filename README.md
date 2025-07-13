@@ -39,7 +39,7 @@ python train.py --dataroot ./datasets/train_datasets/breast --name breast_cycleg
 python train.py --dataroot ./datasets/train_datasets/breast --name breast_cyclegan_resnet18 --model cycle_gan --netG_branch vit_base_branch --pretrained_dir ./weights/Resnet18.ckpt --pretrained_OwnResnet18
 ```
 
-- Check [options](https://ultrasoundenhance2023.grand-challenge.org/datasets/) file for more supported options.
+- Check [options](options) file for more supported options.
 
 ### Test
 

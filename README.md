@@ -1,6 +1,6 @@
 # CycleGAN for US Enhance
 
-This code is a secondary development based on the official [CycleGAN](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) repository.
+This code is a secondary development based on the official [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) repository.
 
 We introduce an additional model branch integrated into the original CycleGAN pipeline. This branch adopts either a ResNet18 or ViT-based architecture and serves to evaluate the effectiveness of different pretrained weights—trained on ultrasound datasets—when applied to ultrasound image generation. The branch follows an encoder-decoder structure, and two branch options are provided: `resnet18_branch` and `vit_base_branch`. Pretrained weights can be loaded into the encoder of each branch. For instance, in our work, models such as USFM, DINOv2, and MAE—trained using a ViT backbone on ultrasound datasets—are loaded into the `vit_base_branch` for comparative analysis.
 
